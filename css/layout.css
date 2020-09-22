@@ -98,7 +98,7 @@ main article {
 
   width: 400px;
   color: #333;
-  /*z-index: 3;*/
+  z-index: 3;
 }
 
 main article h2 {
@@ -110,6 +110,57 @@ main article p {
     margin-top: 30px;
     line-height: 1.3;
 }
+
+main .skills {
+    position: relative;
+    width: 1000px;
+    height: 500px;
+    top: 20%;
+}
+
+main .skills span {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    margin-top: 60px;
+
+    border: 5px solid #fbdf98;
+    border-radius: 125px;
+
+}
+
+.skillImg1 {
+    background: url(../images/springframework.png) no-repeat center;
+}
+
+.skillImg2 {
+    left: 400px;
+    background: url(../images/java.png) no-repeat center;
+}
+
+.skillImg3 {
+    left: 800px;
+    background: url(../images/javascript.png) no-repeat center;
+}
+
+.skillImg4 {
+    top: 360px;
+    background: url(../images/bootstrap.png) no-repeat center;
+}
+
+.skillImg5 {
+    top: 360px;
+    left: 400px;
+    background: url(../images/jquery.png) no-repeat center;
+}
+
+.skillImg6 {
+    top: 360px;
+    left: 800px;
+    background: url(../images/mysql.png) no-repeat center;
+}
+
+
 
 main .contact {
   top: 35%;
@@ -161,14 +212,17 @@ main .obj22 {
 main .obj31 {
   bottom: 30px;
   right: 200px;
+    opacity: 0.3;
 }
 main .obj32 {
   bottom: -300px;
   right: 100px;
+    opacity: 0.3;
 }
 main .obj33 {
   bottom: -150px;
   right: -70px;
+    opacity: 0.3;
 }
 
 main .obj41 {
