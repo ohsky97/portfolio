@@ -23,7 +23,7 @@
 
       $('html, body').stop().animate({
         scrollTop: newTop
-      }, 1500, easing);
+      }, 1000, easing);
 
       $('.gnb').children().removeClass();
       $(this).addClass('on');
@@ -49,7 +49,7 @@
 
         $('html, body').stop().animate({
           scrollTop: before
-        }, 1500, 'easeOutBounce');
+        }, 1000, 'easeOutBounce');
 
       } else if(delta < 0 && secIndex != last) {
         // 휠을 아래로 돌렸을 때
@@ -57,7 +57,7 @@
 
         $('html, body').stop().animate({
           scrollTop: after
-        }, 1500, 'easeOutBounce');
+        }, 1000, 'easeOutBounce');
 
       }
 
