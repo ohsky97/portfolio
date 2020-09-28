@@ -91,7 +91,7 @@ main article h2 {
   font-weight: normal
 }
 main article p {
-    margin-top: 30px;
+    margin-top: 50px;
     line-height: 1.3;
 }
 
@@ -106,7 +106,7 @@ main .who label {
 }
 
 /* info */
-main .info {
+main .myInfo {
   left: 1000px;
   top: 45%;
 
@@ -115,21 +115,34 @@ main .info {
   z-index: 3;
 }
 
-main .info label {
+main .myInfo label {
     font-size: 28px;
 }
 
 /* project */
 main .project {
-    position: relative;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+main .project h2 {
+    position: absolute;
     top: 15%;
+    margin-left: 350px;
+
 }
 
 main .project .banner {
   position: relative;
-  height: 465px;
-  width: 600px;
-  top: 100px;
+  height: 350px;
+  width: 450px;
+  top: 50%;
+  left: 350px;
+
+  margin-top: -175px;
 
   overflow: hidden;
 }
@@ -153,44 +166,41 @@ main .project .banner .slide {
   height: 100%;
 }
 
-.banner .btn button {
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  top: 50%;
-  margin-top: -15px;
-
-  outline: none;
-  background: none;
-  cursor: pointer;
-}
-/* 첫번째 font-family가 없으면 두번재가 나옴. */
-.banner .btn button:before {
-  display: block;
-  font-family: 'FontAwesome', 'Font Awesome 5 Free';
-  content: '\f359';
-  font-size: 30px;
-  color: #fff;
-  text-shadow: 3px 3px 5px #333
-}
-.banner .btn a:hover:before {
-  color: #5f0
+/* project projectInfo */
+.projectInfo {
+    position: absolute;
+    top: 45%;
+    left: 1080px;
+    margin-top: -195px;
 }
 
-.banner .btn .prev {
+.projectInfo .info2, info3, info4 {
+    display: none;
+}
 
+.projectInfo .info2 {
+    margin-top: 80px;
 }
-.banner .btn .next {
-    right: 0;
+
+.projectInfo ul {}
+
+.projectInfo ul li {
+    font-size: 21px;
+    color: #555;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
-.banner .btn .next:before {
-  content: '\f35a'
+
+.projectInfo ul label {
+   font-weight: bold;
 }
+
 
 /* skills */
 main .skills {
     position: relative;
     top: 15%;
+    left: 200px;
 }
 
 main .skills span {
@@ -202,6 +212,45 @@ main .skills span {
     border: 5px solid #fbdf98;
     border-radius: 125px;
 
+}
+
+/* banner 슬라이드 버튼 */
+.project .btn button {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  top: 50%;
+  margin-top: -23px;
+
+  outline: none;
+  background: none;
+  cursor: pointer;
+}
+
+/* 첫번째 font-family가 없으면 두번재가 나옴. */
+.btn button:before {
+  display: block;
+  font-family: 'FontAwesome', 'Font Awesome 5 Free';
+  content: '\f359';
+  font-size: 45px;
+  color: #fff;
+  text-shadow: 3px 3px 5px #333
+}
+
+.btn a:hover:before {
+  color: #5f0
+}
+
+.btn .prev {
+    left: 200px;
+}
+
+.btn .next {
+    right: 200px;
+}
+
+.btn .next:before {
+  content: '\f35a'
 }
 
 .skillImg1 {
@@ -244,6 +293,17 @@ main .skills span {
     top: 400px;
     left: 900px;
     background: url(../images/html5&css3.png) no-repeat center;
+}
+
+.skillImg9 {
+    left: 1200px;
+    background: url(../images/github.png) no-repeat center;
+}
+
+.skillImg10 {
+    top: 400px;
+    left: 1200px;
+    background: url(../images/adobe.png) no-repeat center;
 }
 
 

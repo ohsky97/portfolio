@@ -145,7 +145,7 @@
             var $banner = $(this),
                 $slide = $banner.find('.slide'),
                 $item = $slide.find('a'),
-                $btn = $banner.find('.btn');
+                $btn = $('.project').find('.btn');
 
             var sp = 1500,
                 count = $item.length,
@@ -169,6 +169,21 @@
                 }, sp);
 
                 currentIndex = i;
+
+                if (currentIndex == 0) {
+                    $('.info1').show();
+                    $('.info2').hide();
+
+                } else if (currentIndex == 1) {
+                    $('.info1').hide();
+                    $('.info2').show();
+                    $('.info3').hide();
+
+                } else if (currentIndex == 2) {
+                    $('.info2').hide();
+                    $('.info3').show();
+                    $('.info4').hide();
+                }
 
                 // indicator, btn 상태 업데이트 함수 호출(실행)
                 upDate();
@@ -198,12 +213,13 @@
 
             /* 슬라이드 함수 호출(실행) */
             slideShow(currentIndex);
-
+            console.log(currentIndex);
 
             /*  버튼을 누르면 슬라이드 이동 */
             $btn.find('.next').click(function() {
                 slideShow(currentIndex+1);
                 upDate();
+
             });
 
             $btn.find('.prev').click(function() {
