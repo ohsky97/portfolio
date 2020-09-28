@@ -137,6 +137,82 @@
     });
 
   });
+
+  $(function() {
+          // 배너
+    $('.banner').each(function () {
+
+            var $banner = $(this),
+                $slide = $banner.find('.slide'),
+                $item = $slide.find('a'),
+                $btn = $banner.find('.btn');
+
+            var sp = 1500,
+                count = $item.length,
+
+                currentIndex = 0,
+                timer; // 마우스올리면 멈춤, 벗어나면 재생하기위해 선언함.
+
+
+            $item.each(function (i) {
+                $(this).css({
+                    left: 100 * i + '%'
+                });
+
+            });
+
+
+            /*. 슬라이드 함수 선언(만들기) */
+            function slideShow(i) {
+                $slide.stop().animate({
+                    left: -100 * i + '%'
+                }, sp);
+
+                currentIndex = i;
+
+                // indicator, btn 상태 업데이트 함수 호출(실행)
+                upDate();
+            }
+
+            /* upDate() 함수 선언 */
+            function upDate() {
+
+                // 첫번째 앵커라면 .prev 숨김
+                if (currentIndex == 0) {
+                    $btn.find('.prev').hide();
+                    //          $btn.find('.prev').addClass('on');
+                } else {
+                    $btn.find('.prev').show();
+                }
+
+                // 마지막 앵커라면 .next 숨김
+                if (currentIndex == count - 1) {
+                    $btn.find('.next').hide();
+                } else {
+                    $btn.find('.next').show();
+                }
+
+            }
+
+
+
+            /* 슬라이드 함수 호출(실행) */
+            slideShow(currentIndex);
+
+
+            /*  버튼을 누르면 슬라이드 이동 */
+            $btn.find('.next').click(function() {
+                slideShow(currentIndex+1);
+                upDate();
+            });
+
+            $btn.find('.prev').click(function() {
+                slideShow(currentIndex-1);
+                upDate();
+            });
+
+        });
+  });
 })(jQuery);
 
 
