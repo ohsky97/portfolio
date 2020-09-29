@@ -147,7 +147,7 @@
                 $item = $slide.find('a'),
                 $btn = $('.project').find('.btn');
 
-            var sp = 1500,
+            var sp = 1000,
                 count = $item.length,
 
                 currentIndex = 0,

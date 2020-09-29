@@ -157,6 +157,7 @@ main .project .banner .slide {
   position: absolute;
   width: 100%;
   height: 100%;
+
 }
 
 /* 배경이미지 사용하면 중앙정렬 하기 쉬움 */
@@ -164,6 +165,7 @@ main .project .banner .slide {
   position: absolute;
   width: 100%;
   height: 100%;
+  border-radius: 10px;
 }
 
 /* project projectInfo */
