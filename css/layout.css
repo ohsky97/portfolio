@@ -160,6 +160,7 @@ main .project .banner .slide {
 
 }
 
+
 /* 배경이미지 사용하면 중앙정렬 하기 쉬움 */
 .banner .slide img {
   position: absolute;
@@ -176,11 +177,19 @@ main .project .banner .slide {
     margin-top: -195px;
 }
 
+.projectInfo a:hover {
+    color: #005a89;
+}
+
 .projectInfo .info2, info3, info4 {
     display: none;
 }
 
 .projectInfo .info2 {
+    margin-top: 80px;
+}
+
+.projectInfo .info3 {
     margin-top: 80px;
 }
 

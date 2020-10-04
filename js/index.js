@@ -173,6 +173,7 @@
                 if (currentIndex == 0) {
                     $('.info1').show();
                     $('.info2').hide();
+                    $('.info3').hide();
 
                 } else if (currentIndex == 1) {
                     $('.info1').hide();
@@ -180,6 +181,7 @@
                     $('.info3').hide();
 
                 } else if (currentIndex == 2) {
+                    $('.info1').hide();
                     $('.info2').hide();
                     $('.info3').show();
                     $('.info4').hide();
