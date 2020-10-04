@@ -185,6 +185,11 @@
                     $('.info2').hide();
                     $('.info3').show();
                     $('.info4').hide();
+                } else if (currentIndex == 3) {
+                    $('.info1').hide();
+                    $('.info2').hide();
+                    $('.info3').hide();
+                    $('.info4').show();
                 }
 
                 // indicator, btn 상태 업데이트 함수 호출(실행)
