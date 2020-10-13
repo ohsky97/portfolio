@@ -97,13 +97,17 @@ main article p {
 
 /* who */
 main .who {
-
+    top: 45%;
+    width: 600px;
 }
 
 main .who label {
+    display: inline-block;
+    text-align: center;
     color: #555;
-    font-size: 24px;
+    font-size: 22px;
 }
+
 
 /* info */
 main .myInfo {
