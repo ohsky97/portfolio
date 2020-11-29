@@ -98,6 +98,7 @@ main article p {
 /* who */
 main .who {
     top: 45%;
+    left: 20%;
     width: 600px;
 }
 
@@ -111,7 +112,7 @@ main .who label {
 
 /* info */
 main .myInfo {
-  left: 1000px;
+  left: 57%;
   top: 12%;
 
   width: 450px;
@@ -408,6 +409,162 @@ main .obj42 {
   right: 0;
 }
 
+
+
+
+/* 반응형 */
+@media ( max-width: 981px ) {
+    main .who {
+        top: 25%;
+        left: 50%;
+        margin-left: -147px;
+    }
+
+    main .myInfo {
+        top: 36%;
+        left: 50%;
+        margin-left: -225px;
+    }
+
+    main .myInfo label:nth-of-type(1) {
+        position: relative;
+        left: 50%;
+        margin-left: -43px;
+    }
+
+    main .myInfo label:nth-of-type(2) {
+        position: relative;
+        left: 50%;
+        margin-left: -66px;
+    }
+
+    main .myInfo label:nth-of-type(3) {
+        position: relative;
+        left: 50%;
+        margin-left: -49px;
+    }
+
+    main .myInfo li {
+        text-align: center;
+        list-style-position: inside;
+    }
+
+    main .project h2 {
+        top: 20%;
+        left: 50%;
+        margin-left: -66px;
+    }
+
+    main .project .banner {
+        top: 35%;
+        left: 50%;
+        margin-left: -225px;
+    }
+
+
+    main .project .projectInfo {
+        top: 65%;
+        left: 50%;
+        margin-left: -167px;
+    }
+
+    main .project .projectInfo li {
+        text-align: center;
+        list-style-position: inside;
+        font-weight: bold;
+    }
+
+    main .project .projectInfo {
+        text-align: center;
+    }
+
+
+    main .project .btn {
+        position: relative;
+        width: 200px;
+        top: 38%;
+        left: 50%;
+        margin-left: -100px;
+    }
+
+    main .project .btn .next {
+        right: 0;
+    }
+
+    main .project .btn .prev {
+        left: 0;
+    }
+
+
+
+    main .skills {
+        width: 600px;
+        top: 10%;
+        left: 50%;
+        margin-left: -300px;
+
+    }
+
+    main .skills h2 {
+        position: absolute;
+        left: 50%;
+        margin-left: -49px;
+    }
+
+    main .skills span {
+        margin-top: 100px;
+    }
+
+    main .skills .skillImg3 {
+        left: 0;
+        top: 350px;
+    }
+
+    main .skills .skillImg4 {
+        left: 300px;
+        top: 350px;
+    }
+
+    main .skills .skillImg5 {
+        left: 0;
+        top: 700px;
+    }
+
+    main .skills .skillImg6 {
+        left: 300px;
+        top: 700px;
+    }
+
+    main .skills .skillImg7 {
+        left: 0;
+        top: 1050px;
+    }
+
+    main .skills .skillImg8 {
+        left: 300px;
+        top: 1050px;
+    }
+
+    main .skills .skillImg9 {
+        left: 0;
+        top: 1400px;
+    }
+
+    main .skills .skillImg10 {
+        left: 300px;
+        top: 1400px;
+    }
+
+
+    main .contact {
+        top: 50%;
+        left: 50%;
+        margin-top: -160px;
+        margin-left: -200px;
+
+        text-align: center;
+    }
+}
 
 
 
